@@ -17,6 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/getHealth', "HealthController@getHealth");
-Route::get('/{value?}', "HealthController@storeHealth");
+Route::get('/getName', "HealthController@getName"); //新增資料到DB
 
