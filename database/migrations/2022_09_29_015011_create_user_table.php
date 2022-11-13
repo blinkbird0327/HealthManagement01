@@ -13,10 +13,14 @@ class CreateUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('user', function (Blueprint $table) {                //建立一個資料表
             $table->id();
-            $table->string('name');
-            $table->integer('weight');
+            $table->integer('name');                 //客戶名稱
+            $table->integer('weight');              //體重
+            $table->integer('height');              //身高
+            $table->integer('age');                 //年齡
+            $table->integer('gender');              //性別
+            $table->integer('date');                //日期
         });
     }
 
