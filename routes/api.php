@@ -18,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/getName', "HealthController@getName"); //新增資料到DB
 
 Route::get('/getData', [\App\Http\Controllers\HealthController::class,'getData']);
+
+Route::get('/getWeight', [\App\Http\Controllers\HealthController::class,'getWeight']);
+
+Route::get('/editData', [\App\Http\Controllers\HealthController::class,'editData']);
+
+Route::get('/getAllData', [\App\Http\Controllers\HealthController::class,'getAllData']);
+
+Route::get('/getUserData', [\App\Http\Controllers\HealthController::class,'getUserData']);
